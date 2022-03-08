@@ -2,14 +2,13 @@
 
 @section('content')
 
-    <h2>{{$comic->publishing_house}}</h2>
+    <h1>{{$comic->publishing_house}}</h1>
     <h2>{{$comic->comics}}</h2>
-    <h2>{{$comic->series}}</h2>
-    <h2>{{$comic->description}}</h2>
-    <h2>{{$comic->release}}</h2>
-    <h2>{{$comic->available}}</h2>
+    <h3>{{$comic->series}}</h3>
+    <h4>{{$comic->description}}</h4>
+    <h5>{{$comic->release}}</h5>
+    <h6>{{$comic->available}}</h2>
 
-    <button><a href="{{ route('comics.index')}}">Inseriscine un altro!</a></button>
 
     
     @endsection
