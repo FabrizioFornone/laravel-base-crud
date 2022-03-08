@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    @dump($db)
-    <h1>Test </h1>
+    <h1>New Comics </h1>
     <button><a href="{{ route('comics.create')}}">Nuovo!</a></button>
+
+    @yield('content')
 
 
 </body>

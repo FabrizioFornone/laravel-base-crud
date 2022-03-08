@@ -1,7 +1,11 @@
+@extends('comics.index')
+
+@section('content')
+
 <form action="{{ route('comics.store') }}" method="post">
 
     @csrf
-
+    <br />
     <div>
         <label for="publishing_house">Publishing House</label>
         <input type="text" name="publishing_house">
@@ -37,6 +41,8 @@
         <input type="text" name="available">
     </div>
     <br />
-    <input  type="submit" value="Invia">
+    <input type="submit" value="Invia">
 
 </form>
+
+@endsection
