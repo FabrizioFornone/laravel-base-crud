@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    @dump($db)
     <h1>Test </h1>
     <button><a href="{{ route('comics.create')}}">Nuovo!</a></button>
 

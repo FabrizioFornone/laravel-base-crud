@@ -16,7 +16,7 @@
 
     <div>
         <label for="series">Series</label>
-        <input type="text" name="publishing_house">
+        <input type="text" name="series">
     </div>
     <br />
 
