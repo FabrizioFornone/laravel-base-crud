@@ -11,8 +11,9 @@
 <body>
     <h1>Default</h1>
     <a href="{{ route("comics.index") }}">Comics Index</a>
-    <br/>
+    <br />
     @yield('content')
+
 
 </body>
 

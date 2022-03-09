@@ -12,7 +12,6 @@
     <h1>New Comics </h1>
     <button><a href="{{ route('comics.create')}}">Nuovo!</a></button>
 
-
     <table>
         <thead>
             <tr>
@@ -26,7 +25,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($db as $comic)
+            @foreach($comics as $comic)
             <tr>
                 <td>{{ $comic->publishing_house }}</td>
                 <td>{{ $comic->comics }}</td>
@@ -44,6 +43,23 @@
             @endforeach
         </tbody>
     </table>
+
+    <script>
+        const forms = document.querySelectorAll('form')
+        
+          forms.forEach(el => {
+          el.addEventListener("submit", function(event) {
+            event.preventDefault();
+        
+            const modal = confirm("Sei sicuro?");
+        
+            if (modal) {
+              el.submit();
+            }
+          })
+      })
+      
+    </script>
 
 
 </body>
