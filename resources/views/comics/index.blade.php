@@ -37,6 +37,7 @@
                 <td>
                     <a href="{{ route("comics.edit", $comic->id) }}" >Modifica</a>
                     <a href="{{ route("comics.show", $comic->id) }}" >Dettagli</a>
+                    @include('partials.deleteBtn')
 
                 </td>
             </tr>
